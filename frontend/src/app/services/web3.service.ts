@@ -1,6 +1,10 @@
 import { Injectable } from '@angular/core';
 import { BehaviorSubject, Observable, from } from 'rxjs';
 import { ethers } from 'ethers';
+// import { environment } from '../../environments/environment';
+
+import VaultFactoryAbi from '../../../../artifacts/contracts/core/VaultFactory.sol/VaultFactory.json';
+import SingleOwnerVaultAbi from '../../../../artifacts/contracts/core/VaultTypes/SingleOwnerVault.sol/SingleOwnerVault.json';
 
 import { MetaMaskInpageProvider } from '@metamask/providers';
 declare global {
