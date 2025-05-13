@@ -74,7 +74,7 @@ export class VaultExploreComponent {
   }
 
   loadVaults(): void {
-    this.loading = true;
+    this.loading = false;
     // this.vaultService.loadPublicVaults().then(() => {
     //   this.loading = false;
     // }).catch(error => {

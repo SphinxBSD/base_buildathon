@@ -51,7 +51,7 @@ export class AppComponent implements OnInit {
   }
 
   disconnectWallet(): void {
-    // this.web3Service.disconnectWallet();
+    this.web3Service.disconnectWallet();
     this.isConnected = false;
     this.walletAddress = '';
   }
@@ -62,7 +62,7 @@ export class AppComponent implements OnInit {
     const savedAddress = localStorage.getItem('walletAddress');
     if (savedAddress) {
       // Intentar reconectar automáticamente
-      // this.web3Service.reconnectWallet();
+      this.web3Service.reconnectWallet();
     }
   }
 }
