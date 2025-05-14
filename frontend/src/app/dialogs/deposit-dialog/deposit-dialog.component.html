@@ -1,0 +1,12 @@
+<!-- deposit-dialog.component.html -->
+<h2 mat-dialog-title>Depositar ETH</h2>
+<mat-dialog-content>
+  <p>Vault: {{ data.vault.metadata.name }}</p>
+  <mat-form-field>
+    <input matInput type="number" [(ngModel)]="amount" placeholder="Cantidad en ETH">
+  </mat-form-field>
+</mat-dialog-content>
+<mat-dialog-actions>
+  <button mat-button (click)="dialogRef.close()">Cancelar</button>
+  <button mat-raised-button color="primary" (click)="onDeposit()">Depositar</button>
+</mat-dialog-actions>

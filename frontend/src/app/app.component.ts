@@ -42,8 +42,6 @@ export class AppComponent implements OnInit {
       this.walletAddress = account;
     });
     
-    // Comprobar si hay una conexión guardada
-    this.checkSavedConnection();
   }
 
   connectWallet(): void {
@@ -56,13 +54,4 @@ export class AppComponent implements OnInit {
     this.walletAddress = '';
   }
   
-  private checkSavedConnection(): void {
-    // Aquí implementarías la lógica para verificar si hay una conexión guardada
-    // Por ejemplo, si guardaste la dirección en localStorage
-    const savedAddress = localStorage.getItem('walletAddress');
-    if (savedAddress) {
-      // Intentar reconectar automáticamente
-      // this.web3Service.reconnectWallet();
-    }
-  }
 }
