@@ -62,7 +62,7 @@ export class AppComponent implements OnInit {
     const savedAddress = localStorage.getItem('walletAddress');
     if (savedAddress) {
       // Intentar reconectar automáticamente
-      this.web3Service.reconnectWallet();
+      // this.web3Service.reconnectWallet();
     }
   }
 }
