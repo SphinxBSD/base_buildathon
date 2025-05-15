@@ -15,7 +15,7 @@ import { MatProgressSpinnerModule } from '@angular/material/progress-spinner';
 
 import { VaultService } from '../../services/vault.service';
 import { Web3Service } from '../../services/web3.service';
-import { VaultInfo } from '../../models/vault.model'
+import { Vault } from '../../models/vault.model';
 
 
 @Component({
@@ -39,8 +39,8 @@ import { VaultInfo } from '../../models/vault.model'
   styleUrl: './vault-explore.component.scss'
 })
 export class VaultExploreComponent {
-  publicVaults: VaultInfo[] = [];
-  filteredVaults: VaultInfo[] = [];
+  publicVaults: Vault[] = [];
+  filteredVaults: Vault[] = [];
   categories: string[] = [];
   loading = true;
   isConnected = false;

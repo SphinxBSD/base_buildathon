@@ -7,8 +7,7 @@ import {
   Vault, 
   VaultMetadata, 
   VaultType, 
-  CreateVaultRequest, 
-  VaultInfo 
+  CreateVaultRequest,  
 } from '../models/vault.model';
 import { 
   Transaction, 

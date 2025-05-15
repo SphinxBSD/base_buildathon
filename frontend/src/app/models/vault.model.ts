@@ -47,16 +47,3 @@ export interface CreateVaultRequest {
     metadata: VaultMetadata;
     type: VaultType;
 }
-
-export interface VaultInfo {
-  address: string;
-  creator: string;
-  name: string;
-  description: string;
-  category: string;
-  imageURI: string;
-  isPublic: boolean;
-  createdAt: number;
-  balance: string;
-  targetAmount?: string;
-}

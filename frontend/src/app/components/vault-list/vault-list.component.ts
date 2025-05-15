@@ -84,6 +84,11 @@ export class VaultListComponent implements OnInit {
 
   isVaultOwner(vault: Vault): boolean {
     const account = this.web3Service.getAccount();
+    console.log("Owner:");
+    console.log(vault.owner.toLocaleLowerCase());
+    console.log("Account:");
+    console.log(account.toLocaleLowerCase());
+    
     return vault.owner.toLowerCase() === account.toLowerCase();
   }
 }

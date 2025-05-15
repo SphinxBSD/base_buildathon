@@ -1,7 +1,6 @@
 import { Injectable } from '@angular/core';
 import { BehaviorSubject, Observable, from, of, throwError } from 'rxjs';
 import { ethers } from 'ethers';
-import { catchError, map, switchMap, tap } from 'rxjs/operators';
 
 import VaultFactoryAbi from '../../../../artifacts/contracts/core/VaultFactory.sol/VaultFactory.json';
 import SingleOwnerVaultAbi from '../../../../artifacts/contracts/core/VaultTypes/SingleOwnerVault.sol/SingleOwnerVault.json';
