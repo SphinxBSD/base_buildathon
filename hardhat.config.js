@@ -18,6 +18,10 @@ module.exports = {
     sepolia: {
       url: process.env.ALCHEMY_RPC_URL,
       accounts: [process.env.PRIVATE_KEY]
+    },
+    "base-mainnet": {
+      url: process.env.BASE_MAINNET_RPC_URL,
+      accounts: [process.env.PRIVATE_KEY]
     }
   },
   paths: {
